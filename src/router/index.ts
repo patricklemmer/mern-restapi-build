@@ -1,5 +1,7 @@
+// Express imports
 import express from 'express';
 
+// Router imports
 import authentication from './authentication';
 import users from './users';
 

@@ -1,3 +1,4 @@
+// Module imports
 import crypto from 'crypto';
 
 const SECRET = 'sECreTWoRd';

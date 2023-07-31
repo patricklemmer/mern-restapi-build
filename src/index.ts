@@ -1,12 +1,24 @@
+// Express imports
 import express from 'express';
-import http from 'http';
+
+// Package imports
 import bodyParser from 'body-parser';
-import cookieParser from 'cookie-parser';
 import compression from 'compression';
-import cors from 'cors';
+import cookieParser from 'cookie-parser';
+
+// Library imports
 import mongoose from 'mongoose';
 
+// Middleware imports
+import cors from 'cors';
+
+// Module imports
+import http from 'http';
+
+// Config imports
 import 'dotenv/config';
+
+// Router imports
 import router from './router';
 
 const app = express();

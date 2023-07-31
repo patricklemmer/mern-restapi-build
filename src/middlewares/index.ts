@@ -1,6 +1,10 @@
+// Express imports
 import express from 'express';
+
+// Library imports
 import { get, merge } from 'lodash';
 
+// Database imports
 import { getUserBySessionToken } from '../db/users';
 
 export const isOwner = async (

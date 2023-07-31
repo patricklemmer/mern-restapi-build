@@ -1,7 +1,7 @@
+// Library imports
 import mongoose from 'mongoose';
 
-// Schema
-
+// User Schema
 const UserSchema = new mongoose.Schema({
   username: { type: String, required: true },
   email: { type: String, required: true },
@@ -12,12 +12,10 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
-// Model
-
+// User Model
 export const UserModel = mongoose.model('User', UserSchema);
 
-// Actions
-
+// User Actions
 export const getUsers = () => UserModel.find();
 export const getUserByEmail = (email: string) => UserModel.findOne({ email });
 export const getUserBySessionToken = (sessionToken: string) =>

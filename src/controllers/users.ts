@@ -1,7 +1,10 @@
+// Express imports
 import express from 'express';
 
+// Databse imports
 import { deleteUserById, getUserById, getUsers } from '../db/users';
 
+// Controller to fetch list of all users
 export const getAllUsers = async (
   req: express.Request,
   res: express.Response
@@ -16,6 +19,7 @@ export const getAllUsers = async (
   }
 };
 
+// Controller to delete on user by ID
 export const deleteUser = async (
   req: express.Request,
   res: express.Response
@@ -32,6 +36,7 @@ export const deleteUser = async (
   }
 };
 
+// Controller to update one user by ID
 export const updateUser = async (
   req: express.Request,
   res: express.Response

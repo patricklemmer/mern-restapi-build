@@ -1,5 +1,7 @@
+// Express imports
 import express from 'express';
 
+// Controller imports
 import { login, register } from '../controllers/authentication';
 
 export default (router: express.Router) => {

@@ -1,8 +1,13 @@
+// Express imports
 import express from 'express';
 
+// Database imports
 import { getUserByEmail, createUser } from '../db/users';
+
+// Helper imports
 import { random, authentication } from '../helpers';
 
+// Controller to handle user registration
 export const register = async (req: express.Request, res: express.Response) => {
   try {
     const { username, password, email } = req.body;
@@ -34,6 +39,7 @@ export const register = async (req: express.Request, res: express.Response) => {
   }
 };
 
+// Controller to handle user login
 export const login = async (req: express.Request, res: express.Response) => {
   try {
     const { email, password } = req.body;
